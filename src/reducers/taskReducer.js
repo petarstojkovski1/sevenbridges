@@ -1,0 +1,63 @@
+import {
+  GET_TASKS,
+  GET_TASK,
+  DELETE_TASK,
+  ERROR,
+  GET_TASKS_LIMIT,
+  GET_TASKS_STATUS,
+  GET_TASKS_LIMIT_STATUS,
+  DISMISS_ERROR
+} from '../actions/types';
+
+const initialState = {
+  tasks: [],
+  task: {},
+  errors: null
+};
+
+export default function(state = initialState, action) {
+  switch (action.type) {
+    case GET_TASKS:
+      return {
+        ...state,
+        tasks: action.payload
+      };
+    case GET_TASK:
+      return {
+        ...state,
+        task: action.payload
+      };
+    case GET_TASKS_LIMIT:
+      return {
+        ...state,
+        tasks: action.payload
+      };
+    case GET_TASKS_STATUS:
+      return {
+        ...state,
+        tasks: action.payload
+      };
+    case GET_TASKS_LIMIT_STATUS:
+      return {
+        ...state,
+        tasks: action.payload
+      };
+    case DELETE_TASK:
+      return {
+        ...state,
+        tasks: state.tasks.filter(task => task.id !== action.payload)
+      };
+    case ERROR:
+      return {
+        ...state,
+        errors: action.payload
+      };
+    case DISMISS_ERROR:
+      return {
+        ...state,
+        errors: null
+      };
+    default:
+      return state;
+  }
+}

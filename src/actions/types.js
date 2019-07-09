@@ -1,0 +1,13 @@
+export const GET_TASKS = 'GET_TASKS';
+export const GET_TASK = 'GET_TASK';
+export const GET_TASKS_LIMIT = 'GET_TASKS_LIMIT';
+export const GET_TASKS_STATUS = 'GET_TASKS_STATUS';
+export const GET_TASKS_LIMIT_STATUS = 'GET_TASKS_LIMIT_STATUS';
+export const DELETE_TASK = 'DELETE_TASK';
+export const GET_USER = 'GET_USER';
+export const ADD_PROJECT = 'ADD_PROJECT';
+export const ERROR = 'ERROR';
+export const PROJECT_ERROR = 'PROJECT_ERROR';
+export const DISMISS_PROJECT_ERROR = 'DISMISS_PROJECT_ERROR';
+export const DISMISS_ERROR = 'DISMISS_ERROR';
+export const DISMISS_PROJECT_SUCCESS = 'DISMISS_PROJECT_SUCCESS';
